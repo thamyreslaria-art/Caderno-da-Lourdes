@@ -1,0 +1,19 @@
+.footer {
+  background-color: #7a3000;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.footer p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #ffe6cc;
+}

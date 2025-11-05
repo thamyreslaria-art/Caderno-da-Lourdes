@@ -1,0 +1,36 @@
+.missao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #ffe0a3;
+  border-radius: 15px;
+  box-shadow: var(--sombra);
+  margin-top: 3rem;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.missao-texto {
+  flex: 1;
+  padding: 2rem;
+}
+
+.missao-texto h2 {
+  font-size: 1.8rem;
+  color: var(--cor-texto);
+  margin-bottom: 1rem;
+}
+
+.missao-texto p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #663300;
+}
+
+.missao-imagem {
+  width: 50%;
+  height: auto;
+  border-left: 2px solid #ffcc66;
+  border-radius: 0 15px 15px 0;
+}

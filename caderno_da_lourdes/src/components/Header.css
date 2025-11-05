@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #fff8ea;
+  border-bottom: 2px solid #ffe0a3;
+  box-shadow: var(--sombra);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #8b5e3c;
+}
+
+.icon {
+  font-size: 2rem;
+  background-color: var(--cor-primaria);
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+nav li {
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: var(--cor-texto);
+  font-weight: 500;
+}
+
+nav li.active,
+nav li:hover {
+  background-color: var(--cor-primaria);
+  color: white;
+}
