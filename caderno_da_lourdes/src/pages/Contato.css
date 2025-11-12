@@ -1,0 +1,115 @@
+/* Estilos gerais da página de contato */
+.contato-page {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
+  flex: 1; /* Faz a página ocupar o restante do espaço e empurrar o footer para baixo */
+}
+
+/* Estilo da seção de informações de contato */
+.informacoes-contato {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.meios-contato,
+.redes-sociais {
+  flex: 1;
+}
+
+.meios-contato h3,
+.redes-sociais h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.meios-contato ul,
+.redes-sociais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.meios-contato li,
+.redes-sociais li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.meios-contato li strong,
+.redes-sociais li strong {
+  font-weight: bold;
+}
+
+.redes-sociais a {
+  color: #7a3000;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+
+/* Formulário de Contato */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fff7e6; /* Cor de fundo leve para destacar o formulário */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para o formulário */
+}
+
+.form-contato label {
+  font-weight: 500;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e6c08b;
+  border-radius: 4px;
+}
+
+.form-contato button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #d96d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.form-contato button:hover {
+  background-color: #c65900;
+}
+
+/* Adicionando um estilo para o footer fixo no final da página */
+.footer {
+  background-color: #7a3000;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+  position: relative; /* Para que o footer fique no final */
+  bottom: 0; /* Coloca o footer no final */
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.footer p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #ffe6cc;
+}

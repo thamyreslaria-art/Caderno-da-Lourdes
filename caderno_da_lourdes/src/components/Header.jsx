@@ -1,41 +1,16 @@
-import React, { useState } from "react";
-import "./Header.css";
+import { Link } from "react-router-dom";
 
-export function Header() {
-  const [paginaAtiva, setPaginaAtiva] = useState("Home");
-
-  return (
-    <header className="header">
-      <div className="logo">
-        <span className="icon">🍲</span>
-        <div>
-          <h1>Caderno da Lourdes</h1>
-          <p>Receitas caseiras com amor</p>
-        </div>
-      </div>
-
-      <nav>
-        <ul>
-          <li
-            className={paginaAtiva === "Home" ? "active" : ""}
-            onClick={() => setPaginaAtiva("Home")}
-          >
-            Home
-          </li>
-          <li
-            className={paginaAtiva === "Página 2" ? "active" : ""}
-            onClick={() => setPaginaAtiva("Página 2")}
-          >
-            Página 2
-          </li>
-          <li
-            className={paginaAtiva === "Contato" ? "active" : ""}
-            onClick={() => setPaginaAtiva("Contato")}
-          >
-            Contato
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
+// No nav:
+<nav>
+  <ul>
+    <li className={paginaAtiva === "Home" ? "active" : ""} onClick={() => setPaginaAtiva("Home")}>
+      <Link to="/">Home</Link>
+    </li>
+    <li className={paginaAtiva === "Página 2" ? "active" : ""} onClick={() => setPaginaAtiva("Página 2")}>
+      <Link to="/pagina2">Receitas</Link>
+    </li>
+    <li className={paginaAtiva === "Contato" ? "active" : ""} onClick={() => setPaginaAtiva("Contato")}>
+      <Link to="/contato">Contato</Link>
+    </li>
+  </ul>
+</nav>

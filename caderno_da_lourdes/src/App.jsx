@@ -1,21 +1,16 @@
 import React from "react";
 import "./App.css";
-import { Header } from "./components/Header";
-import { Historia } from "./components/Historia";
-import { Valores } from "./components/Valores";
-import { Missao } from "./components/Missao";
-import { Footer } from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contato from "./pages/Contato";
 
 export default function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Historia />
-        <Valores />
-        <Missao />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
+    </Router>
   );
 }
