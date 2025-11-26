@@ -9,16 +9,21 @@ import "../components/Historia.css";
 import "../components/Missao.css";
 import "../components/Valores.css";
 import "../components/Footer.css";
+import logo from "../assets/logo.png";
 
 export default function Home() {
   const [paginaAtiva, setPaginaAtiva] = useState("Home");
+
 
   return (
     <div className="home">
       {/* ===== HEADER ===== */}
       <header className="header">
         <div className="logo">
-          <span className="icon">🍲</span>
+          
+          {/* 👉 AQUI COLOQUEI A IMAGEM DA LOGO */}
+          <img src={logo} alt="Logo" className="logo-img" />
+
           <div>
             <h1>Caderno da Lourdes</h1>
             <p>Receitas caseiras com amor</p>
@@ -31,7 +36,7 @@ export default function Home() {
               <Link to="/" onClick={() => setPaginaAtiva("Home")}>Home</Link>
             </li>
             <li className={paginaAtiva === "Página 2" ? "active" : ""}>
-              <Link to="/pagina2" onClick={() => setPaginaAtiva("Página 2")}>Receitas</Link>
+              <Link to="/Pagina2" onClick={() => setPaginaAtiva("Página2")}>Receitas</Link>
             </li>
             <li className={paginaAtiva === "Contato" ? "active" : ""}>
               <Link to="/contato" onClick={() => setPaginaAtiva("Contato")}>Contato</Link>

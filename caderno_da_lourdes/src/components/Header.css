@@ -55,4 +55,14 @@ nav li:hover {
   background-color: var(--cor-primaria);
   color: white;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 60px;  /* ajuste o tamanho aqui */
+  height: auto;
+}
 
