@@ -1,0 +1,74 @@
+/* Container principal da página */
+.home {
+  min-height: 100vh;        /* ocupa toda a altura da tela */
+  display: flex;
+  flex-direction: column;    /* organiza header, conteúdo e footer em coluna */
+}
+
+/* Conteúdo das receitas */
+.receitas-page {
+  flex: 1;                  /* faz o conteúdo crescer e empurra o footer para baixo */
+  width: 80%;
+  margin: 0 auto;           /* centraliza horizontalmente */
+  text-align: left;          /* força alinhamento à esquerda */
+}
+
+/* Lista de receitas */
+.lista-receitas {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Cards de receita */
+.card-lista {
+  background: #fff8ee;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Nome da receita */
+.nome-receita {
+  text-align: left;
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.4rem;
+  color: #8b4513;
+  transition: 0.3s;
+}
+
+.nome-receita:hover {
+  color: #d87a28;
+  transform: translateX(5px);
+}
+
+/* Conteúdo que abre */
+.conteudo-receita {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid #ffd699;
+}
+
+.img-receita {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 12px;
+}
+
+.titulo {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+/* Remove estilo padrão de lista */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
